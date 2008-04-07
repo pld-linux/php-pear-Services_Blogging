@@ -28,7 +28,8 @@ others.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-API umożliwiające dostęp do systemów takich jak blogger, livejournal.
+API umożliwiające dostęp do systemów takich jak blogger czy
+livejournal.
 
 Ta klasa ma w PEAR status: %{_status}.
 
