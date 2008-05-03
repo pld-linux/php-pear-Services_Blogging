@@ -6,12 +6,13 @@
 Summary:	%{_pearname} - access your blog with PHP
 Summary(pl.UTF-8):	%{_pearname} - dostęp do blogów z poziomu PHP
 Name:		php-pear-%{_pearname}
-Version:	0.1.1
-Release:	2
+Version:	0.2.0
+Release:	1
 License:	LGPL Version 2.1
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	204d91fa141e7b98ac28cbf56508dbc8
+# Source0-md5:	a5f40f95ec32deb2a4f504daa2b8ba38
+Source1:	%{name}-Exception.php
 URL:		http://pear.php.net/package/Services_Blogging/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -54,6 +55,7 @@ Testy dla PEAR::%{_pearname}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %pear_package_install
+install %{SOURCE1} $RPM_BUILD_ROOT%{php_pear_dir}/Services/Blogging/Driver/Exception.php
 
 %clean
 rm -rf $RPM_BUILD_ROOT
