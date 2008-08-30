@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - access your blog with PHP
 Summary(pl.UTF-8):	%{_pearname} - dostęp do blogów z poziomu PHP
 Name:		php-pear-%{_pearname}
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	LGPL Version 2.1
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	49a88be4bb55b815679364b0c250a4a3
+# Source0-md5:	0e402167cf54bf972246bda228231e6f
 URL:		http://pear.php.net/package/Services_Blogging/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
