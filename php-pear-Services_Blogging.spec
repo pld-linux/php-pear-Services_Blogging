@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Services
-%define		_subclass	Blogging
 %define		_status		beta
 %define		_pearname	Services_Blogging
 Summary:	%{_pearname} - access your blog with PHP
 Summary(pl.UTF-8):	%{_pearname} - dostęp do blogów z poziomu PHP
 Name:		php-pear-%{_pearname}
 Version:	0.2.3
-Release:	1
+Release:	2
 License:	LGPL Version 2.1
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b8fde44cc5aa02483e26f48f0170a0c6
 URL:		http://pear.php.net/package/Services_Blogging/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-XML_RPC
@@ -36,9 +34,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
