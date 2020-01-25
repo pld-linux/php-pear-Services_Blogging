@@ -1,6 +1,5 @@
 %define		status		beta
 %define		pearname	Services_Blogging
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - access your blog with PHP
 Summary(pl.UTF-8):	%{pearname} - dostęp do blogów z poziomu PHP
 Name:		php-pear-%{pearname}
